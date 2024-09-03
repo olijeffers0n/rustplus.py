@@ -95,6 +95,14 @@ class RustMarker(Serializable):
     PatrolHelicopterMarker = 8
     TravelingVendor = 9
 
+    Events = (
+        ExplosionMarker,
+        ChinookMarker,
+        CargoShipMarker,
+        CrateMarker,
+        PatrolHelicopterMarker,
+    )
+
     def __init__(self, data: AppMarker) -> None:
         self._id: int = data.id
         self._type: int = data.type
